@@ -83,7 +83,7 @@ void loop() {
     {
       Serial.println(duration2);
       // This is where the LED On/Off 
-      digitalWrite(led,HIGH); // When the Red condition is met, the Green LED should turn off
+      digitalWrite(led,HIGH); 
       Serial.println("right senor blocked ");
       digitalWrite(led2,LOW);
       digitalWrite(led3,LOW);
@@ -100,7 +100,7 @@ void loop() {
     {
       Serial.println(duration2);
      // This is where the LED On/Off 
-      digitalWrite(led,HIGH); // When the Red condition is met, the Green LED should turn off
+      digitalWrite(led,HIGH); 
       Serial.println("right senor blocked ");
      digitalWrite(led2,LOW);
       digitalWrite(led3,HIGH);
@@ -114,7 +114,8 @@ void loop() {
     }
     else if (distance >= 30 && distance2 < 30) //turnright condition
     {
-      digitalWrite(led,LOW); // When the Red condition is met, the Green LED should turn off
+      // This is where the LED On/Off
+      digitalWrite(led,LOW);
       Serial.println("right senor not blocked ");
       digitalWrite(led2,HIGH);
       digitalWrite(led3,HIGH);
@@ -128,7 +129,8 @@ void loop() {
     } 
     else //forward condition
     {
-      digitalWrite(led,LOW); // When the Red condition is met, the Green LED should turn off
+      // This is where the LED On/Off
+      digitalWrite(led,LOW); 
       Serial.println("right senor not blocked ");
       digitalWrite(led2,HIGH);
       digitalWrite(led3,LOW);
